@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+Template Name: Lacegant
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+	<head>
+		<title>GYCam | Obrigado</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+		<link href="layout/styles/style.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body id="top">
+		<!-- HEADER -->
+		<div class="wrapper row1">
+		<header id="header" class="hoc clear"> 
+			<div id="logo">
+			<h1><a href="#">Girls in your Cam</a></h1>
+			<p>Diversão, garotas e muito mais tudo ao vivo.</p>
+			</div>
+		</header>
+		</div>
+		<!-- MENU -->
+		<div class="wrapper row2">
+			<nav id="mainav" class="hoc clear"> 
+				<ul class="clear">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="gallery.html">Galeria</a></li>
+				<li><a href="contact.html">Contato</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="despesas.html">Despesas</a></li>
+				<li><a href="sair.html">Sair</a></li>
+				</ul>
+			</nav>
+		</div>
+	<!-- LOCATION -->
+	<div class="wrapper bgded overlay" style="<?php print $urlimage; ?>">
+		<div id="breadcrumb" class="hoc clear"> 
+			<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#"><?php echo $pageName?></a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="wrapper row3">
+			<main class="hoc container clear"> 
+				<div class="content"> 
+					<article class="center">
+						<h2 class="heading">Obrigado!</h2>
+						<p>Sua mensagem foi enviada Sr(a). <?php print $nome; ?> enquanto isso, veja um show de nossas garotas gratuitamente.</p>
+						<footer><a class="btn" href="#">Confira</a></footer>
+					</article>
+      
+	   
+				</div>
+				<div class="clear"></div>
+			</main>
+		</div>
+		<!-- FOOTER CONTACT -->
+		<div class="wrapper row4">
+		<footer id="footer" class="hoc clear"> 
+			<div class="one_half first">
+			<h6 class="title">Contatos</h6>
+			<ul class="nospace linklist contact">
+				<li><i class="fa fa-map-marker"></i>
+				<address>
+				Nome da rua &amp; Número, Cidade, Código postal
+				</address>
+				</li>
+				<li><i class="fa fa-phone"></i> +00 (123) 456 7890<br>
+				+00 (123) 456 7890</li>
+				<li><i class="fa fa-fax"></i> +00 (123) 456 7890</li>
+				<li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+			</ul>
+			</div>
+			<div class="one_half">
+			<h6 class="title">Entre para nossa Newsletter</h6>
+			<p class="btmspace-30">Digite seu nome e email e fique por dentro de todas as noticias da GYCam</p>
+			<form method="post" action="#">
+				<fieldset>
+				<legend>Newsletter:</legend>
+				<input class="btmspace-15" type="text" value="" placeholder="Nome">
+				<input class="btmspace-15" type="text" value="" placeholder="Email">
+				<button type="submit" value="submit">Enviar</button>
+				</fieldset>
+			</form>
+			</div>
+		</footer>
+		</div>
+		<!-- FOOTER -->
+		<div class="wrapper row5">
+		<div id="copyright" class="hoc clear"> 
+			<p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Nome do domínio</a></p>
+			<p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+		</div>
+		</div>
+
+		<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+		<!-- JAVASCRIPTS -->
+		<script src="layout/scripts/jquery.min.js"></script>
+		<script src="layout/scripts/jquery.backtotop.js"></script>
+		<script src="layout/scripts/jquery.mobilemenu.js"></script>
+		<!-- IE9 Placeholder Support -->
+		<script src="layout/scripts/jquery.placeholder.min.js"></script>
+		<!-- Adição da classe ativa para pagina do menu -->
+		<script>
+			$("#mainav ul li:nth-child(3)").addClass("active");
+		</script>
+	</body>
+</html>

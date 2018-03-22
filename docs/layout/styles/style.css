@@ -1,0 +1,46 @@
+select {
+	padding:5px;
+	height:50px;
+	width:250px;
+}
+
+#menu-ajax form *{transition:none !important;}
+
+#menu-ajax, #breadcrumb, .sidebar nav{line-height:normal;}
+#menu-ajax .drop::after, #menu-ajax li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#menu-ajax{}
+#menu-ajax ul{text-transform:uppercase; text-align:center;}
+#menu-ajax ul ul{z-index:9999; position:absolute; width:160px; text-transform:none; text-align:left;}
+#menu-ajax ul ul ul{left:160px; top:0;}
+#menu-ajax li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#menu-ajax li:last-child{margin-right:0;}
+#menu-ajax li li{width:100%; margin:0;}
+#menu-ajax li a{display:block; padding:20px 0;}
+#menu-ajax li li a{border:solid; border-width:0 0 1px 0;}
+#menu-ajax .drop{padding-left:15px;}
+#menu-ajax li li a, #menu-ajax li li .drop{display:block; margin:0; padding:10px 15px;}
+#menu-ajax .drop::after, #menu-ajax li li .drop::after{content:"\f0d7";}
+#menu-ajax .drop::after{top:25px; left:5px;}
+#menu-ajax li li .drop::after{top:15px; left:5px;}
+#menu-ajax ul ul{visibility:hidden; opacity:0;}
+#menu-ajax ul li:hover > ul{visibility:visible; opacity:1;}
+
+#menu-ajax form{display:none; margin:0; padding:20px 0;}
+#menu-ajax form select, #menu-ajax form select option{display:block; cursor:pointer; outline:none;}
+#menu-ajax form select{width:100%; padding:5px; border:1px solid;}
+#menu-ajax form select option{margin:5px; padding:0; border:none;}
+
+/* Navigation */
+#menu-ajax li a{color:inherit;}
+#menu-ajax .active a, #menu-ajax a:hover, #menu-ajax li:hover > a{color:#FF866C; background-color:inherit;}
+#menu-ajax li li a, #menu-ajax .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#menu-ajax li li:hover > a, #menu-ajax .active .active > a{color:#FFFFFF; background-color:#FF866C;}
+#menu-ajax form select{color:#FFFFFF; background-color:#393C40;}
+
+@media screen and (max-width:900px){
+	#menu-ajax{padding:20px 0;}
+	#menu-ajax{display:none;}
+	#menu-ajax{display:block;}
+}

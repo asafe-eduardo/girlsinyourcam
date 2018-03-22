@@ -1,0 +1,64 @@
+<?php
+session_start();
+
+?>
+<!DOCTYPE html>
+<!--
+Template Name: Lacegant
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+	<head>
+		<title>GYCam | Recuper Senha</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body id="top">
+		<div class="wrapper row1">
+			<header id="header" class="hoc clear"> 
+				<div id="logo">
+				<h1><a href="#">Girls in your Cam</a></h1>
+				<p>Diversão, garotas e muito mais tudo ao vivo.</p>
+				</div>
+			</header>
+		</div>
+		<div class="wrapper bgded">
+			<main class="hoc container clear"> 
+				<div class="content"> 
+					<div id="comments">
+						<h2>Preencha os campos para recuperar senha</h2>
+						<form action="recuperarSenha_oauth.php" method="POST">
+							<div class="one_half first">
+								<label for="email">Email: <span>*</span></label>
+								<input type="text" name="email" id="email" value="" size="22" required>
+							</div>
+							<div class="one_half">
+								<label for="dica-senha">Dica de senha: <span>*</span></label>
+								<input type="text" name="dica-senha" id="dica-senha" value="" size="22" required>
+							</div>
+							<div class="one_half first">
+								<input type="submit" name="submit" value="Enviar">
+								&nbsp;
+								<input type="reset" name="reset" value="Limpar">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<a href="login.html">Voltar para tela de login</a>
+			</main>
+		</div>
+
+		<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+		<!-- JAVASCRIPTS -->
+		<script src="layout/scripts/jquery.min.js"></script>
+		<script src="layout/scripts/jquery.backtotop.js"></script>
+		<script src="layout/scripts/jquery.mobilemenu.js"></script>
+		<!-- IE9 Placeholder Support -->
+		<script src="layout/scripts/jquery.placeholder.min.js"></script>
+	</body>
+</html>
